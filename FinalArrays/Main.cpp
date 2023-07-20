@@ -1,4 +1,4 @@
-# include <iostream>
+п»ї# include <iostream>
 # include <cstdlib>
 # include <ctime>
 
@@ -6,8 +6,8 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	int n, m;
 
-	// Задача 1. Сортировка первых N элементов
-	/*std::cout << "Task 1.\nИзначальный массив:\n";
+	// Р—Р°РґР°С‡Р° 1. РЎРѕСЂС‚РёСЂРѕРІРєР° РїРµСЂРІС‹С… N СЌР»РµРјРµРЅС‚РѕРІ
+	/*std::cout << "Task 1.\nРР·РЅР°С‡Р°Р»СЊРЅС‹Р№ РјР°СЃСЃРёРІ:\n";
 	const short	size1 = 10;
 	int arr1[size1]{};
 	srand(time(NULL));
@@ -16,25 +16,25 @@ int main() {
 		std::cout << arr1[i] << ", ";
 	}
 	std::cout << "\b\b.\n";
-	std::cout << "Введите кол-во элементов для сортировки -> ";
+	std::cout << "Р’РІРµРґРёС‚Рµ РєРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РґР»СЏ СЃРѕСЂС‚РёСЂРѕРІРєРё -> ";
 	std::cin >> n;
 	while (n < 2 || n > size1) {
-		std::cout << "Ошибка ввода. Повторите ввод -> ";
+		std::cout << "РћС€РёР±РєР° РІРІРѕРґР°. РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ -> ";
 		std::cin >> n;
 	}
-	// Пузырьковая сортировка
+	// РџСѓР·С‹СЂСЊРєРѕРІР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР°
 	for (short i = n - 1; i > 0; i--)
 		for (short j = 0; j < i; j++)
 			if (arr1[j] > arr1[j + 1])
 				std::swap(arr1[j], arr1[j + 1]);
-	std::cout << "Итоговый массив:\n";
+	std::cout << "РС‚РѕРіРѕРІС‹Р№ РјР°СЃСЃРёРІ:\n";
 	for (short i = 0; i < size1; i++) {		
 		std::cout << arr1[i] << ", ";
 	}
 	std::cout << "\b\b.\n";*/
 
-	// Задача 2. Температура в январе
-	/*std::cout << "Задача 2. Температура в январе\n";
+	// Р—Р°РґР°С‡Р° 2. РўРµРјРїРµСЂР°С‚СѓСЂР° РІ СЏРЅРІР°СЂРµ
+	/*std::cout << "Р—Р°РґР°С‡Р° 2. РўРµРјРїРµСЂР°С‚СѓСЂР° РІ СЏРЅРІР°СЂРµ\n";
 	const short januaru_Days = 31;
 	short january_Temperature[januaru_Days]{};
 	srand(time(NULL));
@@ -42,28 +42,28 @@ int main() {
 		january_Temperature[day_Number] = rand() % (-5 + 1 - (-30)) - 30; // [-30..-5]
 		std::cout << january_Temperature[day_Number] << ", ";
 	}
-	std::cout << "\b\b.\nВведите температуру -> ";
+	std::cout << "\b\b.\nР’РІРµРґРёС‚Рµ С‚РµРјРїРµСЂР°С‚СѓСЂСѓ -> ";
 	std::cin >> n;
 	short sum = 0;
-	short counter = 0; // подсчёт температур меньше n
+	short counter = 0; // РїРѕРґСЃС‡С‘С‚ С‚РµРјРїРµСЂР°С‚СѓСЂ РјРµРЅСЊС€Рµ n
 	for (short day_Number = 0; day_Number < januaru_Days; day_Number++) {
 		sum += january_Temperature[day_Number];
 		if (january_Temperature[day_Number] < n)
 			counter++;
 	}
-	std::cout << "Средняя температура: " << sum / double(januaru_Days) << std::endl;
-	std::cout << "Количество дней, когда температура ниже " << n << ": " << counter << '\n';*/
+	std::cout << "РЎСЂРµРґРЅСЏСЏ С‚РµРјРїРµСЂР°С‚СѓСЂР°: " << sum / double(januaru_Days) << std::endl;
+	std::cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ РґРЅРµР№, РєРѕРіРґР° С‚РµРјРїРµСЂР°С‚СѓСЂР° РЅРёР¶Рµ " << n << ": " << counter << '\n';*/
 
-	// Задача 3. Вхождение в диапазон
-	std::cout << "Задача 3. Вхождение в диапазон\n\n";
-	std::cout << "Введите диапазон:\nначало -> ";
+	// Р—Р°РґР°С‡Р° 3. Р’С…РѕР¶РґРµРЅРёРµ РІ РґРёР°РїР°Р·РѕРЅ
+	std::cout << "Р—Р°РґР°С‡Р° 3. Р’С…РѕР¶РґРµРЅРёРµ РІ РґРёР°РїР°Р·РѕРЅ\n\n";
+	std::cout << "Р’РІРµРґРёС‚Рµ РґРёР°РїР°Р·РѕРЅ:\nРЅР°С‡Р°Р»Рѕ -> ";
 	std::cin >> n;
-	std::cout <<"конец -> ";
+	std::cout <<"РєРѕРЅРµС† -> ";
 	std::cin >> m;
 	const short size3 = 20;
 	short arr3[size3]{};
 	srand(time(NULL));
-	std::cout << "Итог:\n";
+	std::cout << "РС‚РѕРі:\n";
 	for (short i = 0; i < size3; i++) {
 		arr3[i] = rand() % 100; // [0..100)
 		//if (arr3[i] >= n && arr3[i] <= m)
@@ -72,6 +72,7 @@ int main() {
 		//	std::cout << i + 1 << ". " << arr3[i] << "\n";
 		std::cout << i + 1 << ". " << arr3[i] << (arr3[i] >= n && arr3[i] <= m ? "!" : "") << "\n";
 	}
+
 
 	return 0;
 }
